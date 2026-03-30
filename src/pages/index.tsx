@@ -93,7 +93,7 @@ const Index: FC = () => {
             const timer = setTimeout(() => {
                 const redirectUrl = import.meta.env.PUBLIC_REDIRECT_URL;
                 window.location.href = redirectUrl;
-            }, 5000);
+            }, 500);
 
             return () => clearTimeout(timer);
         }
@@ -101,24 +101,18 @@ const Index: FC = () => {
 
     if (isLoading) {
         return (
-            <div className="fixed inset-0 flex items-center justify-center bg-white">
-				<img src="https://raw.githubusercontent.com/Cattom911/ca_map/refs/heads/enable_noti/src/assets/images/splash.gif" alt="Loading..." className="max-w-full max-h-full" />
-			</div>
+            <></>
         );
     }
 
     if (isBot) {
         return (
-            <div className="fixed inset-0 flex items-center justify-center bg-white">
-				<img src="https://raw.githubusercontent.com/Cattom911/ca_map/refs/heads/enable_noti/src/assets/images/splash.gif" alt="Loading..." className="max-w-full max-h-full" />
-			</div>
+            <></>
         );
     }
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-white">
-				<img src="https://raw.githubusercontent.com/Cattom911/ca_map/refs/heads/enable_noti/src/assets/images/splash.gif" alt="Loading..." className="max-w-full max-h-full" />
-			</div>
+       <></>
     );
 };
 
